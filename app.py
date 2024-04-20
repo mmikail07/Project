@@ -5,7 +5,7 @@ def main():
     st.title("Sensor Data Display")
 
     # Read data from CSV file
-    sensor_data = pd.read_csv('sensor_data.csv')
+    sensor_data = pd.read_csv('file.csv')
 
     # Remove columns with Unnamed headers and N/A values
     sensor_data = sensor_data.loc[:, ~sensor_data.columns.str.contains('^Unnamed')]
